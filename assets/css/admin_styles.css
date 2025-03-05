@@ -1,0 +1,140 @@
+:root {
+  --main-bg-color: #005a8e;
+  --main-text-color: #025a8e;
+  --second-text-color: #bbbec5;
+  --second-bg-color: #b3daf1;
+}
+
+.primary-text {
+  color: var(--main-text-color);
+}
+
+.second-text {
+  color: var(--second-text-color);
+}
+
+.row{
+  margin-left: 0%;
+  margin-right: 0%;
+}
+.primary-bg {
+  background-color: var(--main-bg-color);
+}
+
+.secondary-bg {
+  background-color: var(--second-bg-color);
+}
+
+.rounded-full {
+  border-radius: 100%;
+}
+
+#wrapper {
+  overflow-x: hidden;
+  background-image: linear-gradient(
+    to right,
+    #679cbb,
+    #80acc6,
+    #99bdd1,
+    #b3cddd,
+    #ccdee8
+  );
+}
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin 0.25s ease-out;
+  -moz-transition: margin 0.25s ease-out;
+  -o-transition: margin 0.25s ease-out;
+  transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+#menu-toggle {
+  cursor: pointer;
+}
+
+.list-group-item {
+  border: none;
+  padding: 20px 30px;
+}
+
+.list-group-item.active {
+  background-color: transparent;
+  color: var(--main-text-color);
+  font-weight: bold;
+  border: none;
+}
+
+/* .list-group-item{
+  color: #005a8e;
+} */
+/* .delete_btn{
+  background-color: #ff3535;
+  width: 50px;
+  border-radius: 20px;
+} */
+
+.dropdown-menu{
+  position: sticky;
+}
+
+.custom-delete-btn {
+  background-color: #ff550c; /* Warm orange color */
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.custom-delete-btn:hover {
+  background-color: #fc0000; /* Darker orange color on hover */
+}
+
+.custom-delete-btn i {
+  margin-right: 10px;
+}
+
+.custom-delete-btn:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+    /* overflow: auto; */
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+
+.col{
+  overflow: auto;
+}
+
+
